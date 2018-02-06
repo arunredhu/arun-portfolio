@@ -549,7 +549,7 @@ var SkillSection = function SkillSection(_ref) {
         { 'class': 'skill-section' },
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'h3',
-            { 'class': 'uppercase' },
+            { 'class': 'uppercase animated delay005 fadeIn' },
             sectionTitle
         ),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__SkillList__["a" /* default */], { listData: sectionData })
@@ -592,18 +592,16 @@ var SkillSection = function SkillSection(_ref) {
 
 
 
-var _ref2 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-    'p',
-    { 'class': 'paragraph' },
-    'The universe of web is changing so rapidly and everyday a new technology is out with its unique and poweful features. Here are some of them which makes my skillset more impressive.'
-);
-
 var Skills = function Skills(_ref) {
     var skills = _ref.skills;
     return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         'div',
         { 'class': 'skills' },
-        _ref2,
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+            'p',
+            { 'class': 'paragraph animated delay005 fadeInUp' },
+            'The universe of web is ever so expanding with new technologies coming every day with their new features and ideology. Here are some of those which I feel passionate about and love working with.'
+        ),
         Object.keys(skills).map(function (objectKey, index) {
             return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__SkillSection__["a" /* default */], { key: index + objectKey, sectionTitle: objectKey, sectionData: skills[objectKey] });
         })
@@ -644,7 +642,7 @@ var SocialLinks = function SocialLinks(_ref) {
         socialLinks.map(function (socialItem, index) {
             return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                 'div',
-                { key: index, 'class': 'social-link-item' },
+                { key: index, 'class': 'social-link-item animated delay017 fadeInUp' },
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__shared_ImageItem__["a" /* default */], socialItem)
             );
         })
@@ -737,12 +735,10 @@ var App = function (_Component) {
 		_this.handleRoute = function (_ref) {
 			var url = _ref.url;
 
-			console.log(url);
 			var currentRouteObj = _this.props.routePaths.filter(function (_ref2) {
 				var routePath = _ref2.routePath;
 				return url.match(routePath);
 			})[0];
-			console.log(currentRouteObj);
 			_this.setState({
 				currentRouteObj: currentRouteObj
 			});
@@ -826,22 +822,13 @@ var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         { 'class': '' },
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'span',
-            { 'class': 'name-label' },
+            { 'class': 'name-label animated delay003 fadeInDown' },
             'Arun Redhu'
         ),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'div',
-            { 'class': 'paragraph' },
-            '-professional web developer'
-        )
-    ),
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-        'div',
-        null,
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-            'span',
-            null,
-            '-a professional web developer'
+            { 'class': 'name-subheader animated delay005 fadeIn' },
+            '( Professional Full-Stack JavaScript developer )'
         )
     ),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
@@ -849,13 +836,18 @@ var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         { 'class': 'about-details' },
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'p',
-            { 'class': 'paragraph' },
-            'I\'m a professional web developer who loves to play with new technologies and do a lot of mix-match.to develop the cross platform web application with the help of new technologies and tries to implement the suitable programming paradigm.'
+            { 'class': 'paragraph animated delay007 fadeInUp' },
+            'I am a full stack JavaScript developer by profession and tech enthusiast at heart. I love to play around with emerging technologies and mix and match to develop cross-platform cutting edge applications.'
         ),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'p',
-            { 'class': 'paragraph' },
-            'I enjoy learning new things and strongly believe that continuous education is the only way for all of us to evolve.'
+            { 'class': 'paragraph animated delay009 fadeInUp' },
+            'I always have been interested in coding and aspect of art that code can bring make me very interested.'
+        ),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+            'p',
+            { 'class': 'paragraph animated delay011 fadeInUp' },
+            'I enjoy learning new things, spending my time working on JavaScript and strongly believe that continuous education is the only way for all of us to evolve.'
         )
     )
 );
@@ -1095,7 +1087,7 @@ var SkillList = function SkillList(_ref) {
         listData.map(function (imageObj, index) {
             return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                 'div',
-                { key: index, 'class': 'skill-list-item text-center' },
+                { key: index, 'class': 'skill-list-item text-center animated delay00' + (index % 7 + 3) + ' fadeInRight' },
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__shared_ImageItem__["a" /* default */], imageObj)
             );
         })
@@ -1121,7 +1113,8 @@ var SkillList = function SkillList(_ref) {
 
 var ContactItem = function ContactItem(_ref) {
     var hrefLink = _ref.hrefLink,
-        text = _ref.text;
+        text = _ref.text,
+        classNames = _ref.classNames;
     return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         'div',
         { 'class': 'contact-item' },
@@ -1130,7 +1123,7 @@ var ContactItem = function ContactItem(_ref) {
             null,
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                 'a',
-                { href: hrefLink, title: text, 'class': 'uppercase' },
+                { href: hrefLink, title: text, 'class': 'uppercase ' + classNames },
                 text
             )
         )
@@ -1289,7 +1282,7 @@ var routePaths = [{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return images; });
 var images = {
     skills: {
-        "languages": [{
+        "Technologies": [{
             "title": "JavaScript",
             "name": "JavaScript",
             "targetLink": "",
@@ -1493,17 +1486,17 @@ var WorkExperience = function WorkExperience(_ref) {
                 { key: index, 'class': 'work-exp-item' },
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                     'h3',
-                    null,
+                    { 'class': 'animated delay005 fadeInUp' },
                     name
                 ),
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                     'label',
-                    { 'class': '' },
+                    { 'class': 'animated delay007 fadeInDown' },
                     period
                 ),
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                     'p',
-                    { 'class': 'paragraph' },
+                    { 'class': 'paragraph animated delay003 fadeIn' },
                     summary
                 )
             );
@@ -1515,7 +1508,7 @@ WorkExperience.defaultProps = {
     workList: [{
         name: 'Nagarro Software',
         period: 'Sept, 2016 - Present',
-        summary: 'Looking for new opportunities I joined the team at Nagarro which provides the technical architecture solutions, \n                trainings and webinars. \n                My aim is to make the most effective use of my time utilizing my expertise especially in front-end technologies to deliver quality solutions.'
+        summary: 'Looking for new opportunities I joined the team of brightest people at Nagarro who works on bleeding edge of technology and basically they are technology enablers, provides the technical architecture solutions, \n                trainings and webinars. \n                My aim is to make the most effective use of my time utilizing my expertise especially in front-end technologies to deliver quality solutions.'
     }, {
         name: 'Decimal Technologies',
         period: 'Jun, 2015 - Sept, 2016',
@@ -1527,7 +1520,7 @@ WorkExperience.defaultProps = {
     }, {
         name: 'IBM Career Education',
         period: 'May, 2013 - Jun, 2013',
-        summary: 'During the summer vocation of graduation I joined IBM Career Education Group as a Software Trainee \n                where I learned the basic concepts of core java, android development, lifecycle of an android app etc.'
+        summary: 'During the summer vocation of graduation I joined IBM Career Education Group as a Software Trainee \n                where I learned the basic concepts of core java, android development, lifecycles of an android app etc.'
     }, {
         name: 'JMIT Radaur',
         period: 'Aug, 2011 - May, 2015',
@@ -1684,7 +1677,7 @@ var SectionHeader = function SectionHeader(_ref) {
     var headerTitle = _ref.headerTitle;
     return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         'div',
-        { 'class': 'section-header' },
+        { 'class': 'section-header animated delay003 fadeInLeft' },
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'h2',
             null,
@@ -1707,6 +1700,8 @@ var SectionHeader = function SectionHeader(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SocialLinks__ = __webpack_require__("CEGx");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style__ = __webpack_require__("eiOR");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__style__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 
 
 
@@ -1716,31 +1711,31 @@ var SectionHeader = function SectionHeader(_ref) {
 
 var _ref2 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'p',
-    { 'class': 'paragraph' },
+    { 'class': 'paragraph animated delay003 fadeInUp' },
     'Drop me a line on'
 );
 
 var _ref3 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'p',
-    { 'class': 'paragraph uppercase' },
+    { 'class': 'paragraph uppercase animated delay007 fadeInUp' },
     'Or'
 );
 
 var _ref4 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'p',
-    { 'class': 'paragraph' },
+    { 'class': 'paragraph animated delay009 fadeInUp' },
     'Reach me out at'
 );
 
 var _ref5 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'p',
-    { 'class': 'paragraph uppercase' },
+    { 'class': 'paragraph uppercase animated delay013 fadeInUp' },
     'Or'
 );
 
 var _ref6 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'p',
-    { 'class': 'paragraph' },
+    { 'class': 'paragraph animated delay015 fadeInUp' },
     'We can have a coffee together. Also, you can find me on:'
 );
 
@@ -1753,10 +1748,10 @@ var Contact = function Contact(_ref) {
         'div',
         { 'class': 'contact text-center' },
         _ref2,
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__ContactItem__["a" /* default */], mailId),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__ContactItem__["a" /* default */], _extends({}, mailId, { classNames: 'animated delay005 fadeInUp' })),
         _ref3,
         _ref4,
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__ContactItem__["a" /* default */], phone),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_1__ContactItem__["a" /* default */], _extends({}, phone, { classNames: 'animated delay011 fadeInUp' })),
         _ref5,
         _ref6,
         _ref7
