@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.skill-list{
+    .skill-list-item{
+        margin-top: 16px;
+        flex: 0 1 80px;
+        color: $secondaryColor;
+        span{
+            font-size: 0.8em;
+            display: inline-block;
+            padding: 8px 0 0;
+            letter-spacing: 1px;
+        }
+    }
+}

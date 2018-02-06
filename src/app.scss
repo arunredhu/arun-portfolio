@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+.transition{
+    transition: all 0.3s linear;
+}
+
+.paragraph {
+    letter-spacing: 1px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: $secondaryColor;   
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex {
+	display: flex;
+
+    &.row{
+        flex-direction: row;
+    }
+
+    &.column{
+        flex-direction: column;
+    }
+
+    &.align-center{
+        align-items: center;
+    }
+
+    &.justify-center{
+        justify-content: center;
+    }
+
+    &.wrap{
+        flex-wrap: wrap;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+
+}

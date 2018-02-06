@@ -1,0 +1,62 @@
+@import '../../responsive.scss';
+
+$color: #BF9F60;
+
+.menu-item{
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    color: $color;
+    cursor: pointer;
+
+    @include tablet {
+        font-size: 0.9em;
+        letter-spacing: 1px; 
+    }
+
+    @include mobile {
+        font-size: 0.8em;
+        letter-spacing: 1px; 
+    }
+    
+    &:not(:last-child)::after{
+        content: "|";
+    }
+
+    >a{
+        position: relative;
+        margin: 0 10px;
+        color: $color;
+        text-decoration: none;
+
+        @include mobile {
+            margin: 0 8px;
+        }
+
+        &::after{
+            content: '';
+            width: 20px;
+            height: 3px;
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            background: $color;
+            transform: translateX(-50%);
+            transition: all 0.3s linear;
+
+            @include mobile {
+               top: 20px;
+            }
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &.active::after{
+            width: 100%;
+        }
+
+    }
+
+}

@@ -1,0 +1,151 @@
+.sprite {
+    background-repeat: no-repeat;
+    width: 40px;
+    margin: 5px auto;
+    height: 40px;
+    background: url('/assets/images/spritesheet.png');
+}
+
+.sprite-angular {
+    background-position: -5px -5px;
+}
+
+.sprite-angularjs {
+    background-position: -55px -5px;
+}
+
+.sprite-bootstrap {
+    background-position: -105px -5px;
+}
+
+.sprite-css3 {
+    background-position: -155px -5px;
+}
+
+.sprite-docker {
+    background-position: -205px -5px;
+}
+
+.sprite-facebook {
+    background-position: -5px -55px;
+}
+
+.sprite-flux {
+    background-position: -55px -55px;
+}
+
+.sprite-github {
+    background-position: -105px -55px;
+}
+
+.sprite-gruntjs {
+    background-position: -155px -55px;
+}
+
+.sprite-gulpjs {
+    background-position: -205px -55px;
+}
+
+.sprite-html5 {
+    background-position: -5px -105px;
+}
+
+.sprite-instagram {
+    background-position: -55px -105px;
+}
+
+.sprite-ionic {
+    background-position: -105px -105px;
+}
+
+.sprite-jquery {
+    background-position: -155px -105px;
+}
+
+.sprite-javascript {
+    background-position: -205px -105px;
+}
+
+.sprite-knockoutjs {
+    background-position: -5px -155px;
+}
+
+.sprite-linkedin {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -155px;
+}
+
+.sprite-mail {
+    background-position: -105px -155px;
+}
+
+.sprite-nodejs {
+    background-position: -155px -155px;
+}
+
+.sprite-npm {
+    background-position: -205px -155px;
+}
+
+.sprite-phone {
+    background-position: -5px -205px;
+}
+
+.sprite-phonegap {
+    background-position: -55px -205px;
+}
+
+.sprite-php {
+    background-position: -105px -205px;
+}
+
+.sprite-react {
+    background-position: -155px -205px;
+}
+
+.sprite-redux {
+    width: 40px;
+    height: 40px;
+    background-position: -205px -205px;
+}
+
+.sprite-rollupjs {
+    background-position: -255px -5px;
+}
+
+.sprite-sass {
+    background-position: -255px -55px;
+}
+
+.sprite-stackoverflow {
+    background-position: -255px -105px;
+}
+
+.sprite-twitter {
+    background-position: -255px -155px;
+}
+
+.sprite-typescript {
+    background-position: -255px -205px;
+}
+
+.sprite-vmware {
+    background-position: -5px -255px;
+}
+
+.sprite-vsc {
+    background-position: -55px -255px;
+}
+
+.sprite-vuejs {
+    background-position: -105px -255px;
+}
+
+.sprite-webpack {
+    background-position: -155px -255px;
+}
+
+.sprite-yarn {
+    background-position: -205px -255px;
+}

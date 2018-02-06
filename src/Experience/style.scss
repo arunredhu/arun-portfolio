@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.work-exp-list{
+    border-left: 1px solid $secondaryColor;
+    width: 80%;
+    margin: 24px auto 100px;
+    align-self: center;
+
+    .work-exp-item{
+        padding: 0 0 0 24px ;
+        position: relative;
+        color: $secondaryColor;
+        
+        h3{
+            color: $primaryColor;
+            margin: 0;
+        }
+
+        label{
+            color: #727272;
+            margin-top: 16px;
+            display: inline-block;
+        }
+
+        p{
+            margin: 16px 0;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top:0px;
+            left: -8px;
+            width: 16px;
+            height: 16px;
+            background: $primaryColor;
+            border-radius: 50%;
+        }
+    }   
+}

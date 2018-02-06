@@ -1,0 +1,16 @@
+@import '../../responsive.scss';
+.social-links{
+    justify-content: center;
+
+    .social-link-item{
+        margin: 10px 15px;
+
+        @include tablet{
+            margin: 10px;
+        }
+
+        @include mobile{
+            margin: 7px;
+        }
+    }
+}
