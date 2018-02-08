@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint . && preact test",
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "startApp": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --prerenderUrls prerender-urls.json",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
+    "start": "node ./server.js"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +26,7 @@
     "sass-loader": "^6.0.6"
   },
   "dependencies": {
+    "express": "^4.16.2",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
     "preact-router": "^2.5.2"

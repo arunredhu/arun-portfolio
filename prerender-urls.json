@@ -14,5 +14,9 @@
     {
         "url": "/experience",
         "title": "My Work Experience"
+    },
+    {
+        "url": "/contact",
+        "title": "Contact"
     }
 ]
