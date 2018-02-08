@@ -1,0 +1,36 @@
+{
+  "name": "arun_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && preact test",
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --prerenderUrls prerender-urls.json",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-synacor": "^1.0.0",
+    "if-env": "^1.0.0",
+    "node-sass": "^4.5.3",
+    "preact-cli": "^1.1.2",
+    "sass-loader": "^6.0.6"
+  },
+  "dependencies": {
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
+    "preact-router": "^2.5.2"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.3.0"
+  }
+}
