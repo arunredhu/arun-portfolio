@@ -8,7 +8,8 @@
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --prerenderUrls prerender-urls.json",
     "serve": "preact build && preact serve",
-    "dev": "preact watch"
+    "dev": "preact watch",
+    "heroku-prebuild": "npm install --only=dev"
   },
   "keywords": [],
   "author": "",
