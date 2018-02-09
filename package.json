@@ -6,7 +6,7 @@
   "scripts": {
     "test": "eslint . && preact test",
     "startApp": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build --prerenderUrls prerender-urls.json -c preact.config.js",
+    "build": "preact build --prerenderUrls prerender-urls.json",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
     "start": "node ./server.js"
