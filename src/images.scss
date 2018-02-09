@@ -1,0 +1,392 @@
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0){
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    margin: 5px auto;
+    background-image: url('./assets/images/skills-sprite-1.png');
+}
+
+@mixin stitches-sprite-1($x: 0, $y: 0, $width: 0, $height: 0){
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    margin: 5px auto;
+    background-image: url('./assets/images/skills-sprite-2.png');
+}
+
+@mixin stitches-sprite-2($x: 0, $y: 0, $width: 0, $height: 0){
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    margin: 5px auto;
+    background-image: url('./assets/images/skills-sprite-3.png');
+}
+
+@mixin stitches-sprite-3($x: 0, $y: 0, $width: 0, $height: 0){
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    margin: 5px auto;
+    background-image: url('./assets/images/skills-sprite-4.png');
+}
+
+.sprite {
+    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-angular {
+        @include stitches-sprite(-5px, -5px, 40px, 40px);
+    }
+
+    &.sprite-angularjs {
+        @include stitches-sprite(-55px, -5px, 40px, 40px);
+    }
+
+    &.sprite-bootstrap {
+        @include stitches-sprite(-105px, -5px, 40px, 40px);
+    }
+
+    &.sprite-css3 {
+        @include stitches-sprite(-5px, -55px, 40px, 40px);
+    }
+
+    &.sprite-d3 {
+        @include stitches-sprite(-55px, -55px, 40px, 40px);
+    }
+
+    &.sprite-docker {
+        @include stitches-sprite(-105px, -55px, 40px, 40px);
+    }
+
+    &.sprite-ember {
+        @include stitches-sprite(-5px, -105px, 40px, 40px);
+    }
+
+    &.sprite-eslint {
+        @include stitches-sprite(-55px, -105px, 40px, 40px);
+    }
+
+    &.sprite-flux {
+        @include stitches-sprite(-105px, -105px, 40px, 40px);
+    }
+
+    &.sprite-git {
+        @include stitches-sprite(-155px, -5px, 40px, 40px);
+    }
+
+    &.sprite-graphql {
+        @include stitches-sprite-1(-5px, -5px, 40px, 40px);
+    }
+
+    &.sprite-grunt {
+        @include stitches-sprite-1(-55px, -5px, 40px, 40px);
+    }
+
+    &.sprite-gulp {
+        @include stitches-sprite-1(-105px, -5px, 40px, 40px);
+    }
+
+    &.sprite-handlebar {
+        @include stitches-sprite-1(-5px, -55px, 40px, 40px);
+    }
+
+    &.sprite-highcharts {
+        @include stitches-sprite-1(-55px, -55px, 40px, 40px);
+    }
+
+    &.sprite-html5 {
+        @include stitches-sprite-1(-105px, -55px, 40px, 40px);
+    }
+
+    &.sprite-ionic {
+        @include stitches-sprite-1(-5px, -105px, 40px, 40px);
+    }
+
+    &.sprite-jQuery {
+        @include stitches-sprite-1(-55px, -105px, 40px, 40px);
+    }
+
+    &.sprite-jasmine {
+        @include stitches-sprite-1(-105px, -105px, 40px, 40px);
+    }
+
+    &.sprite-javaScript {
+        @include stitches-sprite-1(-155px, -5px, 40px, 40px);
+    }
+
+    &.sprite-karma {
+        @include stitches-sprite-2(-5px, -5px, 40px, 40px);
+    }
+
+    &.sprite-knockoutjs {
+        @include stitches-sprite-2(-55px, -5px, 40px, 40px);
+    }
+
+    &.sprite-mobx {
+        @include stitches-sprite-2(-105px, -5px, 40px, 40px);
+    }
+
+    &.sprite-mocha {
+        @include stitches-sprite-2(-5px, -55px, 40px, 40px);
+    }
+
+    &.sprite-nativescript {
+        @include stitches-sprite-2(-55px, -55px, 40px, 40px);
+    }
+
+    &.sprite-nodejs {
+        @include stitches-sprite-2(-105px, -55px, 40px, 40px);
+    }
+
+    &.sprite-npm {
+        @include stitches-sprite-2(-5px, -105px, 40px, 40px);
+    }
+
+    &.sprite-phonegap {
+        @include stitches-sprite-2(-55px, -105px, 40px, 40px);
+    }
+
+    &.sprite-php {
+        @include stitches-sprite-2(-105px, -105px, 40px, 40px);
+    }
+
+    &.sprite-protactor {
+        @include stitches-sprite-2(-155px, -5px, 40px, 40px);
+    }
+
+    &.sprite-pwa {
+        @include stitches-sprite-3(-5px, -5px, 40px, 40px);
+    }
+
+    &.sprite-react {
+        @include stitches-sprite-3(-55px, -5px, 40px, 40px);
+    }
+
+    &.sprite-redux {
+        @include stitches-sprite-3(-105px, -5px, 40px, 40px);
+    }
+
+    &.sprite-relay {
+        @include stitches-sprite-3(-5px, -55px, 40px, 40px);
+    }
+
+    &.sprite-rollupjs {
+        @include stitches-sprite-3(-55px, -55px, 40px, 40px);
+    }
+
+    &.sprite-rxjs {
+        @include stitches-sprite-3(-105px, -55px, 40px, 40px);
+    }
+
+    &.sprite-sass {
+        @include stitches-sprite-3(-5px, -105px, 40px, 40px);
+    }
+
+    &.sprite-typescript {
+        @include stitches-sprite-3(-55px, -105px, 40px, 40px);
+    }
+
+    &.sprite-vmware {
+        @include stitches-sprite-3(-105px, -105px, 40px, 40px);
+    }
+
+    &.sprite-vsc {
+        @include stitches-sprite-3(-155px, -5px, 40px, 40px);
+    }
+
+    &.sprite-vuejs {
+        @include stitches-sprite-3(-155px, -55px, 40px, 40px);
+    }
+
+    &.sprite-webpack {
+        @include stitches-sprite-3(-155px, -105px, 40px, 40px);
+    }
+
+    &.sprite-yarn {
+        @include stitches-sprite-3(-5px, -155px, 40px, 40px);
+    }
+}
+
+// @mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0){
+//     background-position: $x $y;
+//     width: $width;
+//     height: $height;
+// }
+
+// .sprite {
+//     background-image: url(spritesheet.png);    
+//     background-repeat: no-repeat;
+//     display: block;
+
+//     &.sprite-angular {
+//         @include stitches-sprite(-5px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-angularjs {
+//         @include stitches-sprite(-55px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-bootstrap {
+//         @include stitches-sprite(-105px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-css3 {
+//         @include stitches-sprite(-155px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-d3 {
+//         @include stitches-sprite(-205px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-docker {
+//         @include stitches-sprite(-255px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-ember {
+//         @include stitches-sprite(-5px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-eslint {
+//         @include stitches-sprite(-55px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-flux {
+//         @include stitches-sprite(-105px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-git {
+//         @include stitches-sprite(-155px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-graphql {
+//         @include stitches-sprite(-205px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-grunt {
+//         @include stitches-sprite(-255px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-gulp {
+//         @include stitches-sprite(-5px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-handlebar {
+//         @include stitches-sprite(-55px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-highcharts {
+//         @include stitches-sprite(-105px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-html5 {
+//         @include stitches-sprite(-155px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-ionic {
+//         @include stitches-sprite(-205px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-jQuery {
+//         @include stitches-sprite(-255px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-jasmine {
+//         @include stitches-sprite(-5px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-javaScript {
+//         @include stitches-sprite(-55px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-karma {
+//         @include stitches-sprite(-105px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-knockoutjs {
+//         @include stitches-sprite(-155px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-mobx {
+//         @include stitches-sprite(-205px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-mocha {
+//         @include stitches-sprite(-255px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-nativescript {
+//         @include stitches-sprite(-5px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-nodejs {
+//         @include stitches-sprite(-55px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-npm {
+//         @include stitches-sprite(-105px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-phonegap {
+//         @include stitches-sprite(-155px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-php {
+//         @include stitches-sprite(-205px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-protactor {
+//         @include stitches-sprite(-255px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-pwa {
+//         @include stitches-sprite(-5px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-react {
+//         @include stitches-sprite(-55px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-redux {
+//         @include stitches-sprite(-105px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-relay {
+//         @include stitches-sprite(-155px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-rollupjs {
+//         @include stitches-sprite(-205px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-rxjs {
+//         @include stitches-sprite(-255px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-sass {
+//         @include stitches-sprite(-305px, -5px, 40px, 40px);
+//     }
+
+//     &.sprite-typescript {
+//         @include stitches-sprite(-305px, -55px, 40px, 40px);
+//     }
+
+//     &.sprite-vmware {
+//         @include stitches-sprite(-305px, -105px, 40px, 40px);
+//     }
+
+//     &.sprite-vsc {
+//         @include stitches-sprite(-305px, -155px, 40px, 40px);
+//     }
+
+//     &.sprite-vuejs {
+//         @include stitches-sprite(-305px, -205px, 40px, 40px);
+//     }
+
+//     &.sprite-webpack {
+//         @include stitches-sprite(-305px, -255px, 40px, 40px);
+//     }
+
+//     &.sprite-yarn {
+//         @include stitches-sprite(-5px, -305px, 40px, 40px);
+//     }
+// }
