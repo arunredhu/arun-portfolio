@@ -6,6 +6,7 @@
   "orientation": "portrait",
   "background_color": "#fff",
   "theme_color": "#673ab8",
+  "description": "This is Arun Redhu online portfoilio",
   "icons": [
     {
       "src": "/assets/icon.png",
