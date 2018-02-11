@@ -2,6 +2,7 @@ import './style';
 
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
+import analytics from 'universal-ga';
 
 import Redirect from './shared/Redirect';
 
@@ -13,6 +14,8 @@ import Contact from './Contact';
 import Skills from './Skills';
 
 import { routePaths } from './shared/routePaths';
+
+analytics.initialize('UA-113955959-1');
 
 export default class App extends Component {
 
