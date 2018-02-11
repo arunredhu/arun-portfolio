@@ -739,6 +739,9 @@ var App = function (_Component) {
 				var routePath = _ref2.routePath;
 				return url.match(routePath);
 			})[0];
+
+			_this.appContentDiv ? _this.appContentDiv.scrollTo(0, 0) : '';
+
 			_this.setState({
 				currentRouteObj: currentRouteObj
 			});
@@ -747,20 +750,25 @@ var App = function (_Component) {
 		_this.state = {
 			currentRouteObj: {}
 		};
+		_this.appContentDiv = null;
 		return _this;
 	}
 
 	App.prototype.render = function render() {
+		var _this2 = this;
+
 		var backgroundImage = this.props.backgroundImage;
 		var currentRouteObj = this.state.currentRouteObj;
 
 
 		return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'div',
-			{ 'class': 'app flex column', style: { backgroundImage: 'url(' + backgroundImage + ')' } },
+			{ 'class': 'app flex column animated delay003 fadeIn', style: { backgroundImage: 'url(' + backgroundImage + ')' } },
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 				'div',
-				{ 'class': 'app-content' },
+				{ 'class': 'app-content', ref: function ref(appContentDiv) {
+						return _this2.appContentDiv = appContentDiv;
+					} },
 				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 					'div',
 					{ 'class': 'header-outlet flex' },
@@ -782,7 +790,7 @@ var App = function (_Component) {
 			),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 				'div',
-				{ 'class': 'menu-outlet flex align-center' },
+				{ 'class': 'menu-outlet flex align-center animated delay007 fadeInUp' },
 				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_5__shared_Menu__["a" /* default */], { currentRoute: currentRouteObj })
 			)
 		);
@@ -848,6 +856,15 @@ var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
             'p',
             { 'class': 'paragraph animated delay011 fadeInUp' },
             'I enjoy learning new things, spending my time working on JavaScript and strongly believe that continuous education is the only way for all of us to evolve.'
+        )
+    ),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+        'div',
+        { 'class': 'download-resume-btn animated delay015 fadeInDown' },
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+            'a',
+            { href: '/assets/resume.pdf', target: '_blank' },
+            'Download Resume'
         )
     )
 );
@@ -1159,7 +1176,7 @@ var Menu = function Menu(_ref) {
     var routePaths = _ref.routePaths,
         currentRoute = _ref.currentRoute;
 
-    console.log(currentRoute);
+
     return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
         'div',
         { 'class': 'menu-container flex' },
@@ -1329,15 +1346,35 @@ var images = {
             "targetLink": "",
             "imageClass": "sprite-angular"
         }, {
+            "title": "React",
+            "name": "React",
+            "targetLink": "",
+            "imageClass": "sprite-react"
+        }, {
             "title": "AngularJs",
             "name": "AngularJs",
             "targetLink": "",
             "imageClass": "sprite-angularjs"
         }, {
-            "title": "React",
-            "name": "React",
+            "title": "VueJs",
+            "name": "VueJs",
             "targetLink": "",
-            "imageClass": "sprite-react"
+            "imageClass": "sprite-vuejs"
+        }, {
+            "title": "EmberJS",
+            "name": "EmberJS",
+            "targetLink": "",
+            "imageClass": "sprite-ember"
+        }, {
+            "title": "JQuery",
+            "name": "JQuery",
+            "targetLink": "",
+            "imageClass": "sprite-jQuery"
+        }, {
+            "title": "KnockoutJs",
+            "name": "KnockoutJs",
+            "targetLink": "",
+            "imageClass": "sprite-knockoutjs"
         }, {
             "title": "Redux",
             "name": "Redux",
@@ -1349,75 +1386,10 @@ var images = {
             "targetLink": "",
             "imageClass": "sprite-flux"
         }, {
-            "title": "VueJs",
-            "name": "VueJs",
-            "targetLink": "",
-            "imageClass": "sprite-vuejs"
-        }, {
-            "title": "KnockoutJs",
-            "name": "KnockoutJs",
-            "targetLink": "",
-            "imageClass": "sprite-knockoutjs"
-        }, {
-            "title": "Ionic",
-            "name": "Ionic",
-            "targetLink": "",
-            "imageClass": "sprite-ionic"
-        }, {
-            "title": "JQuery",
-            "name": "JQuery",
-            "targetLink": "",
-            "imageClass": "sprite-jQuery"
-        }, {
-            "title": "Bootstrap",
-            "name": "Bootstrap",
-            "targetLink": "",
-            "imageClass": "sprite-bootstrap"
-        }, {
-            "title": "Phonegap",
-            "name": "Phonegap",
-            "targetLink": "",
-            "imageClass": "sprite-phonegap"
-        }, {
-            "title": "D3",
-            "name": "D3",
-            "targetLink": "",
-            "imageClass": "sprite-d3"
-        }, {
-            "title": "EmberJS",
-            "name": "EmberJS",
-            "targetLink": "",
-            "imageClass": "sprite-ember"
-        }, {
-            "title": "GraphQL",
-            "name": "GraphQL",
-            "targetLink": "",
-            "imageClass": "sprite-graphql"
-        }, {
-            "title": "Handlebars",
-            "name": "Handlebars",
-            "targetLink": "",
-            "imageClass": "sprite-handlebar"
-        }, {
-            "title": "Highcharts",
-            "name": "Highcharts",
-            "targetLink": "",
-            "imageClass": "sprite-highcharts"
-        }, {
-            "title": "Jasmine",
-            "name": "Jasmine",
-            "targetLink": "",
-            "imageClass": "sprite-jasmine"
-        }, {
             "title": "MobX",
             "name": "MobX",
             "targetLink": "",
             "imageClass": "sprite-mobx"
-        }, {
-            "title": "NativeScript",
-            "name": "NativeScript",
-            "targetLink": "",
-            "imageClass": "sprite-nativescript"
         }, {
             "title": "RelayJS",
             "name": "RelayJS",
@@ -1428,27 +1400,97 @@ var images = {
             "name": "RxJS",
             "targetLink": "",
             "imageClass": "sprite-rxjs"
-        }],
-        "tools": [{
-            "title": "Protactor",
-            "name": "Protactor",
+        }, {
+            "title": "Ionic",
+            "name": "Ionic",
             "targetLink": "",
-            "imageClass": "sprite-protactor"
+            "imageClass": "sprite-ionic"
+        }, {
+            "title": "Phonegap",
+            "name": "Phonegap",
+            "targetLink": "",
+            "imageClass": "sprite-phonegap"
+        }, {
+            "title": "NativeScript",
+            "name": "NativeScript",
+            "targetLink": "",
+            "imageClass": "sprite-nativescript"
+        }, {
+            "title": "React Native",
+            "name": "React Native",
+            "targetLink": "",
+            "imageClass": "sprite-react"
+        }, {
+            "title": "D3",
+            "name": "D3",
+            "targetLink": "",
+            "imageClass": "sprite-d3"
+        }, {
+            "title": "Highcharts",
+            "name": "Highcharts",
+            "targetLink": "",
+            "imageClass": "sprite-highcharts"
+        }, {
+            "title": "Handlebars",
+            "name": "Handlebars",
+            "targetLink": "",
+            "imageClass": "sprite-handlebar"
+        }, {
+            "title": "Bootstrap 3",
+            "name": "Bootstrap 3",
+            "targetLink": "",
+            "imageClass": "sprite-bootstrap"
+        }, {
+            "title": "GraphQL",
+            "name": "GraphQL",
+            "targetLink": "",
+            "imageClass": "sprite-graphql"
+        }, {
+            "title": "Jasmine",
+            "name": "Jasmine",
+            "targetLink": "",
+            "imageClass": "sprite-jasmine"
         }, {
             "title": "Mocha",
             "name": "Mocha",
             "targetLink": "",
             "imageClass": "sprite-mocha"
         }, {
-            "title": "Karma",
-            "name": "Karma",
+            "title": "Protactor",
+            "name": "Protactor",
             "targetLink": "",
-            "imageClass": "sprite-karma"
+            "imageClass": "sprite-protactor"
+        }],
+        "tools": [{
+            "title": "NPM",
+            "name": "NPM",
+            "targetLink": "",
+            "imageClass": "sprite-npm"
         }, {
-            "title": "ESLint",
-            "name": "ESLint",
+            "title": "Yarn",
+            "name": "Yarn",
             "targetLink": "",
-            "imageClass": "sprite-eslint"
+            "imageClass": "sprite-yarn"
+        }, {
+            "title": "Webpack",
+            "name": "Webpack",
+            "targetLink": "",
+            "imageClass": "sprite-webpack"
+        }, {
+            "title": "GulpJs",
+            "name": "GulpJs",
+            "targetLink": "",
+            "imageClass": "sprite-gulp"
+        }, {
+            "title": "GruntJs",
+            "name": "GruntJs",
+            "targetLink": "",
+            "imageClass": "sprite-grunt"
+        }, {
+            "title": "RollupJs",
+            "name": "RollupJs",
+            "targetLink": "",
+            "imageClass": "sprite-rollupjs"
         }, {
             "title": "Git",
             "name": "Git",
@@ -1460,25 +1502,15 @@ var images = {
             "targetLink": "",
             "imageClass": "sprite-docker"
         }, {
-            "title": "GruntJs",
-            "name": "GruntJs",
+            "title": "Karma",
+            "name": "Karma",
             "targetLink": "",
-            "imageClass": "sprite-grunt"
+            "imageClass": "sprite-karma"
         }, {
-            "title": "GulpJs",
-            "name": "GulpJs",
+            "title": "ESLint",
+            "name": "ESLint",
             "targetLink": "",
-            "imageClass": "sprite-gulp"
-        }, {
-            "title": "NPM",
-            "name": "NPM",
-            "targetLink": "",
-            "imageClass": "sprite-npm"
-        }, {
-            "title": "RollupJs",
-            "name": "RollupJs",
-            "targetLink": "",
-            "imageClass": "sprite-rollupjs"
+            "imageClass": "sprite-eslint"
         }, {
             "title": "VMware",
             "name": "WMware",
@@ -1489,16 +1521,6 @@ var images = {
             "name": "VSC",
             "targetLink": "",
             "imageClass": "sprite-vsc"
-        }, {
-            "title": "Webpack",
-            "name": "Webpack",
-            "targetLink": "",
-            "imageClass": "sprite-webpack"
-        }, {
-            "title": "Yarn",
-            "name": "Yarn",
-            "targetLink": "",
-            "imageClass": "sprite-yarn"
         }]
     },
     "socialLinks": [{
@@ -1588,15 +1610,15 @@ WorkExperience.defaultProps = {
     workList: [{
         name: 'Nagarro Software',
         period: 'Sept, 2016 - Present',
-        summary: 'Looking for new opportunities I joined the team of brightest people at Nagarro who works on bleeding edge of technology and basically they are technology enablers, provides the technical architecture solutions, \n                trainings and webinars. \n                My aim is to make the most effective use of my time utilizing my expertise especially in front-end technologies to deliver quality solutions.'
+        summary: 'Looking for new opportunities I joined the team of brightest people (Center Of Excellence) at Nagarro who works on bleeding edge of technology and basically they are technology enablers, provides the technical architecture solutions, \n                trainings and webinars. \n                My aim is to make the most effective use of my time utilizing my expertise especially in JavaScript to deliver quality solutions.'
     }, {
         name: 'Decimal Technologies',
         period: 'Jun, 2015 - Sept, 2016',
-        summary: 'Being a part of Decimal Technologies, I was amplified with various opportunities to work for different domains including Banking, IT in a wide range of javascript projects from jQuery to Angular.'
+        summary: 'Being a part of Decimal Technologies, I was amplified with various opportunities to work for different domains including Banking, IT in a wide range of JavaScript projects. I worked with senior developers to manage large, complex design projects and involved in architecting the applications and development of common components.'
     }, {
         name: 'GB Infotech',
-        period: 'May, 2013 - Jun, 2013',
-        summary: 'Completed the professional training of Web Development with PHP at GB infotech. It was good experience while working with PHP.'
+        period: 'May, 2014 - Jul, 2014',
+        summary: 'In the span of summer vocation of graduation I successfully completed the professional training of web development with PHP at GB Infotech. It was good experience while working with PHP but It sparks my interest toward JavaScript.'
     }, {
         name: 'IBM Career Education',
         period: 'May, 2013 - Jun, 2013',
@@ -1816,7 +1838,7 @@ var _ref5 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 var _ref6 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
     'p',
     { 'class': 'paragraph animated delay015 fadeInUp' },
-    'We can have a coffee together. Also, you can find me on:'
+    'Also, you can find me on:'
 );
 
 var _ref7 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_2__SocialLinks__["a" /* default */], null);
