@@ -23,19 +23,19 @@ WorkExperience.defaultProps = {
         {
             name: 'Nagarro Software',
             period: 'Sept, 2016 - Present',
-            summary: `Looking for new opportunities I joined the team of brightest people at Nagarro who works on bleeding edge of technology and basically they are technology enablers, provides the technical architecture solutions, 
+            summary: `Looking for new opportunities I joined the team of brightest people (Center Of Excellence) at Nagarro who works on bleeding edge of technology and basically they are technology enablers, provides the technical architecture solutions, 
                 trainings and webinars. 
-                My aim is to make the most effective use of my time utilizing my expertise especially in front-end technologies to deliver quality solutions.`
+                My aim is to make the most effective use of my time utilizing my expertise especially in JavaScript to deliver quality solutions.`
         },
         {
             name: 'Decimal Technologies',
             period: 'Jun, 2015 - Sept, 2016',
-            summary: `Being a part of Decimal Technologies, I was amplified with various opportunities to work for different domains including Banking, IT in a wide range of javascript projects from jQuery to Angular.`
+            summary: `Being a part of Decimal Technologies, I was amplified with various opportunities to work for different domains including Banking, IT in a wide range of JavaScript projects. I worked with senior developers to manage large, complex design projects and involved in architecting the applications and development of common components.`
         },
         {
             name: 'GB Infotech',
-            period: 'May, 2013 - Jun, 2013',
-            summary: `Completed the professional training of Web Development with PHP at GB infotech. It was good experience while working with PHP.`
+            period: 'May, 2014 - Jul, 2014',
+            summary: `In the span of summer vocation of graduation I successfully completed the professional training of web development with PHP at GB Infotech. It was good experience while working with PHP but It sparks my interest toward JavaScript.`
         },
         {
             name: 'IBM Career Education',

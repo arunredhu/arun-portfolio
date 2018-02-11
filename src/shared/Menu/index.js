@@ -6,7 +6,7 @@ import { routePaths } from '../routePaths';
 import './style';
 
 const Menu = ({ routePaths, currentRoute }) => {
-    console.log(currentRoute)
+
     return (
         <div class="menu-container flex">
             {

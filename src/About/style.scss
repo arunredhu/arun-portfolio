@@ -23,4 +23,16 @@
             margin-top: 16px;
         }
     }
+    .download-resume-btn{
+        display: flex;
+        margin-top: 24px;
+        justify-content: center;
+
+        a{
+            padding: 10px 15px;
+            outline: 1px solid #BF9F60;
+            color: #BF9F60;
+            text-decoration: none;
+        }
+    }
 }

@@ -12,7 +12,7 @@ const Contact = ({ mailId, phone }) => (
         <p class="paragraph animated delay009 fadeInUp">Reach me out at</p>
         <ContactItem {...phone} classNames="animated delay011 fadeInUp" />
         <p class="paragraph uppercase animated delay013 fadeInUp">Or</p>
-        <p class="paragraph animated delay015 fadeInUp">We can have a coffee together. Also, you can find me on:</p>
+        <p class="paragraph animated delay015 fadeInUp">Also, you can find me on:</p>
         <SocialLinks />
     </div>
 );

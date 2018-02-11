@@ -22,6 +22,9 @@ const About = () => {
                     I enjoy learning new things, spending my time working on JavaScript and strongly believe that continuous education is the only way for all of us to evolve.
                 </p>
             </div>
+            <div class="download-resume-btn animated delay015 fadeInDown">
+                <a href="/assets/resume.pdf" target="_blank">Download Resume</a>
+            </div>
         </div>
     )
 }

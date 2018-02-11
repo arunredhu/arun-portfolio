@@ -58,16 +58,40 @@ export const images = {
                 "imageClass": `sprite-angular`
             },
             {
+                "title": `React`,
+                "name": `React`,
+                "targetLink": ``,
+                "imageClass": `sprite-react`
+            },
+            {
                 "title": `AngularJs`,
                 "name": `AngularJs`,
                 "targetLink": ``,
                 "imageClass": `sprite-angularjs`
             },
             {
-                "title": `React`,
-                "name": `React`,
+                "title": `VueJs`,
+                "name": `VueJs`,
                 "targetLink": ``,
-                "imageClass": `sprite-react`
+                "imageClass": `sprite-vuejs`
+            },
+            {
+                "title": `EmberJS`,
+                "name": `EmberJS`,
+                "targetLink": ``,
+                "imageClass": `sprite-ember`
+            },
+            {
+                "title": `JQuery`,
+                "name": `JQuery`,
+                "targetLink": ``,
+                "imageClass": `sprite-jQuery`
+            },
+            {
+                "title": `KnockoutJs`,
+                "name": `KnockoutJs`,
+                "targetLink": ``,
+                "imageClass": `sprite-knockoutjs`
             },
             {
                 "title": `Redux`,
@@ -82,88 +106,10 @@ export const images = {
                 "imageClass": `sprite-flux`
             },
             {
-                "title": `VueJs`,
-                "name": `VueJs`,
-                "targetLink": ``,
-                "imageClass": `sprite-vuejs`
-            },
-            {
-                "title": `KnockoutJs`,
-                "name": `KnockoutJs`,
-                "targetLink": ``,
-                "imageClass": `sprite-knockoutjs`
-            },
-            {
-                "title": `Ionic`,
-                "name": `Ionic`,
-                "targetLink": ``,
-                "imageClass": `sprite-ionic`
-            },
-            {
-                "title": `JQuery`,
-                "name": `JQuery`,
-                "targetLink": ``,
-                "imageClass": `sprite-jQuery`
-            },
-            {
-                "title": `Bootstrap`,
-                "name": `Bootstrap`,
-                "targetLink": ``,
-                "imageClass": `sprite-bootstrap`
-            },
-            {
-                "title": `Phonegap`,
-                "name": `Phonegap`,
-                "targetLink": ``,
-                "imageClass": `sprite-phonegap`
-            },
-            {
-                "title": `D3`,
-                "name": `D3`,
-                "targetLink": ``,
-                "imageClass": `sprite-d3`
-            },
-            {
-                "title": `EmberJS`,
-                "name": `EmberJS`,
-                "targetLink": ``,
-                "imageClass": `sprite-ember`
-            },
-            {
-                "title": `GraphQL`,
-                "name": `GraphQL`,
-                "targetLink": ``,
-                "imageClass": `sprite-graphql`
-            },
-            {
-                "title": `Handlebars`,
-                "name": `Handlebars`,
-                "targetLink": ``,
-                "imageClass": `sprite-handlebar`
-            },
-            {
-                "title": `Highcharts`,
-                "name": `Highcharts`,
-                "targetLink": ``,
-                "imageClass": `sprite-highcharts`
-            },
-            {
-                "title": `Jasmine`,
-                "name": `Jasmine`,
-                "targetLink": ``,
-                "imageClass": `sprite-jasmine`
-            },
-            {
                 "title": `MobX`,
                 "name": `MobX`,
                 "targetLink": ``,
                 "imageClass": `sprite-mobx`
-            },
-            {
-                "title": `NativeScript`,
-                "name": `NativeScript`,
-                "targetLink": ``,
-                "imageClass": `sprite-nativescript`
             },
             {
                 "title": `RelayJS`,
@@ -176,14 +122,66 @@ export const images = {
                 "name": `RxJS`,
                 "targetLink": ``,
                 "imageClass": `sprite-rxjs`
-            }
-        ],
-        "tools": [
+            },
             {
-                "title": `Protactor`,
-                "name": `Protactor`,
+                "title": `Ionic`,
+                "name": `Ionic`,
                 "targetLink": ``,
-                "imageClass": `sprite-protactor`
+                "imageClass": `sprite-ionic`
+            },
+            {
+                "title": `Phonegap`,
+                "name": `Phonegap`,
+                "targetLink": ``,
+                "imageClass": `sprite-phonegap`
+            },
+            {
+                "title": `NativeScript`,
+                "name": `NativeScript`,
+                "targetLink": ``,
+                "imageClass": `sprite-nativescript`
+            },
+            {
+                "title": `React Native`,
+                "name": `React Native`,
+                "targetLink": ``,
+                "imageClass": `sprite-react`
+            },
+            {
+                "title": `D3`,
+                "name": `D3`,
+                "targetLink": ``,
+                "imageClass": `sprite-d3`
+            },
+            {
+                "title": `Highcharts`,
+                "name": `Highcharts`,
+                "targetLink": ``,
+                "imageClass": `sprite-highcharts`
+            },
+            {
+                "title": `Handlebars`,
+                "name": `Handlebars`,
+                "targetLink": ``,
+                "imageClass": `sprite-handlebar`
+            },
+            {
+                "title": `Bootstrap 3`,
+                "name": `Bootstrap 3`,
+                "targetLink": ``,
+                "imageClass": `sprite-bootstrap`
+            },
+            {
+                "title": `GraphQL`,
+                "name": `GraphQL`,
+                "targetLink": ``,
+                "imageClass": `sprite-graphql`
+            },
+            {
+                "title": `Jasmine`,
+                "name": `Jasmine`,
+                "targetLink": ``,
+                "imageClass": `sprite-jasmine`
             },
             {
                 "title": `Mocha`,
@@ -192,16 +190,48 @@ export const images = {
                 "imageClass": `sprite-mocha`
             },
             {
-                "title": `Karma`,
-                "name": `Karma`,
+                "title": `Protactor`,
+                "name": `Protactor`,
                 "targetLink": ``,
-                "imageClass": `sprite-karma`
+                "imageClass": `sprite-protactor`
+            }
+        ],
+        "tools": [
+            {
+                "title": `NPM`,
+                "name": `NPM`,
+                "targetLink": ``,
+                "imageClass": `sprite-npm`
             },
             {
-                "title": `ESLint`,
-                "name": `ESLint`,
+                "title": `Yarn`,
+                "name": `Yarn`,
                 "targetLink": ``,
-                "imageClass": `sprite-eslint`
+                "imageClass": `sprite-yarn`
+            },
+            {
+                "title": `Webpack`,
+                "name": `Webpack`,
+                "targetLink": ``,
+                "imageClass": `sprite-webpack`
+            },
+            {
+                "title": `GulpJs`,
+                "name": `GulpJs`,
+                "targetLink": ``,
+                "imageClass": `sprite-gulp`
+            },
+            {
+                "title": `GruntJs`,
+                "name": `GruntJs`,
+                "targetLink": ``,
+                "imageClass": `sprite-grunt`
+            },
+            {
+                "title": `RollupJs`,
+                "name": `RollupJs`,
+                "targetLink": ``,
+                "imageClass": `sprite-rollupjs`
             },
             {
                 "title": `Git`,
@@ -216,28 +246,16 @@ export const images = {
                 "imageClass": `sprite-docker`
             },
             {
-                "title": `GruntJs`,
-                "name": `GruntJs`,
+                "title": `Karma`,
+                "name": `Karma`,
                 "targetLink": ``,
-                "imageClass": `sprite-grunt`
+                "imageClass": `sprite-karma`
             },
             {
-                "title": `GulpJs`,
-                "name": `GulpJs`,
+                "title": `ESLint`,
+                "name": `ESLint`,
                 "targetLink": ``,
-                "imageClass": `sprite-gulp`
-            },
-            {
-                "title": `NPM`,
-                "name": `NPM`,
-                "targetLink": ``,
-                "imageClass": `sprite-npm`
-            },
-            {
-                "title": `RollupJs`,
-                "name": `RollupJs`,
-                "targetLink": ``,
-                "imageClass": `sprite-rollupjs`
+                "imageClass": `sprite-eslint`
             },
             {
                 "title": `VMware`,
@@ -250,18 +268,6 @@ export const images = {
                 "name": `VSC`,
                 "targetLink": ``,
                 "imageClass": `sprite-vsc`
-            },
-            {
-                "title": `Webpack`,
-                "name": `Webpack`,
-                "targetLink": ``,
-                "imageClass": `sprite-webpack`
-            },
-            {
-                "title": `Yarn`,
-                "name": `Yarn`,
-                "targetLink": ``,
-                "imageClass": `sprite-yarn`
             }
         ]
     },

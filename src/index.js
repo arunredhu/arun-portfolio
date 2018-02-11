@@ -21,10 +21,14 @@ export default class App extends Component {
 		this.state = {
 			currentRouteObj: {}
 		}
+		this.appContentDiv = null;
 	}
 
 	handleRoute = ({ url }) => {
 		const currentRouteObj = this.props.routePaths.filter(({ routePath }) => url.match(routePath))[0];
+
+		this.appContentDiv ? this.appContentDiv.scrollTo(0, 0) : '';
+
 		this.setState({
 			currentRouteObj
 		});
@@ -36,8 +40,8 @@ export default class App extends Component {
 		const { currentRouteObj } = this.state;
 
 		return (
-			<div class="app flex column" style={{ backgroundImage: `url(${backgroundImage})` }}>
-				<div class="app-content">
+			<div class="app flex column animated delay003 fadeIn" style={{ backgroundImage: `url(${backgroundImage})` }}>
+				<div class="app-content" ref={appContentDiv => this.appContentDiv = appContentDiv}>
 					<div class="header-outlet flex">
 						{currentRouteObj.routePath !== '/about' && <Header headerTitle={currentRouteObj.heading} />}
 					</div>
@@ -51,7 +55,7 @@ export default class App extends Component {
 						</Router>
 					</div>
 				</div>
-				<div class="menu-outlet flex align-center">
+				<div class="menu-outlet flex align-center animated delay007 fadeInUp">
 					<Menu currentRoute={currentRouteObj} />
 				</div>
 			</div>

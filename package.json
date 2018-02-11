@@ -9,7 +9,8 @@
     "build": "preact build --prerenderUrls prerender-urls.json",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "start": "node ./server.js"
+    "start": "node ./server.js",
+    "postbuild": "gulp copyBuild"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +19,10 @@
     "extends": "eslint-config-synacor"
   },
   "devDependencies": {
+    "del": "^3.0.0",
     "eslint": "^4.0.0",
     "eslint-config-synacor": "^1.0.0",
+    "gulp": "^3.9.1",
     "if-env": "^1.0.0",
     "node-sass": "^4.5.3",
     "preact-cli": "^1.1.2",
