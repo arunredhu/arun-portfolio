@@ -1,22 +1,22 @@
 [
     {
         "url": "/",
-        "title": "About"
+        "title": "Arun Redhu - About me"
     },
     {
         "url": "/about",
-        "title": "About"
+        "title": "Arun Redhu - About me"
     },
     {
         "url": "/skills",
-        "title": "My Proficiency"
+        "title": "Arun Redhu - My Proficiency"
     },
     {
         "url": "/experience",
-        "title": "My Work Experience"
+        "title": "Arun Redhu - My Work Experience"
     },
     {
         "url": "/contact",
-        "title": "Contact"
+        "title": "Arun Redhu - Contact"
     }
 ]
