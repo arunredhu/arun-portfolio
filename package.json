@@ -24,7 +24,7 @@
     "eslint-config-synacor": "^1.0.0",
     "gulp": "^3.9.1",
     "if-env": "^1.0.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "preact-cli": "^1.1.2",
     "sass-loader": "^6.0.6"
   },
